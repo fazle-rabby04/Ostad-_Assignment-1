@@ -18,7 +18,7 @@ function calculateResult($marks) {
   $totalMarks = array_sum($marks);
   $averageMarks = $totalMarks / count($marks);
 
-  // Determine grade
+  
   switch (true) {
     case ($averageMarks >= 80 && $averageMarks <= 100):
       $grade = 'A+';
@@ -43,7 +43,7 @@ function calculateResult($marks) {
       break;
   }
 
-  // Output the result
+  
   echo "Total Marks: $totalMarks\n";
   echo "Average Marks: $averageMarks\n";
   echo "Grade: $grade\n";
